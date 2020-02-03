@@ -1,0 +1,114 @@
+@media (min-width:320px) { /* smartphones, iPhone, portrait 480x320 phones */ 
+	.title {
+		font-size: 14px;
+	}
+}
+
+@media (min-width:481px) { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+	.title {
+		font-size: 18px;
+	}
+}
+
+@media (min-width:641px) { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+	.title {
+		font-size: 22px;
+	}
+}
+
+@media (min-width:961px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+	.title {
+		font-size: 26px;
+	}
+}
+
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
+	.title {
+		font-size: 30px;
+	}
+}
+
+@media (min-width:1281px) { /* hi-res laptops and desktops */ 
+	.title {
+		font-size: 34px;
+	}
+}
+
+/* Бутерброд меню*/
+
+.menu {
+	text-align: right;
+}
+
+.menu__item {
+	display: inline-block;
+	color: #333333;
+	font-family: Arial;
+	font-size: 14px;
+	line-height: 30px;
+	padding: 0 10px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.menu__item:hover {
+	text-decoration: underline;
+}
+
+.menu__icon {
+	display: none;
+	width: 45px;
+	height: 35px;
+	position: relative;
+	cursor: pointer;
+}
+
+.menu__line {
+	display: block;
+	position: absolute;
+	height: 9px;
+	width: 100%;
+	background: #333333;
+	border-radius: 9px;
+	opacity: 1;
+	left: 0;
+	transform: rotate(0deg);
+	transition: .25s ease-in-out;
+}
+
+.menu__line_first {
+	top: 0px;
+}
+
+.menu__line_second, .menu__line_third {
+	top: 13px;
+}
+
+.menu__line_four {
+	top: 26px;
+}
+
+@media screen and (max-width: 999px) {
+	.menu__icon{
+		display: inline-block;
+	}
+  
+	.menu__links {
+		position: fixed;
+		display: none;
+		top: 0;
+		right: 0;
+		left: 0;
+		margin-top: 52px;
+		background-color: rgba(0, 0, 0, 0.8);
+		z-index: 1000;
+		overflow: auto;
+	}
+  
+	.menu__item {
+		display: block;
+		padding: 10px 0;
+		text-align: center;
+		color: #fff;
+	}
+}
